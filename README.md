@@ -1,5 +1,5 @@
 # Sonic-Abstractions-and-Representations [in progress]
-A process of temporary translation from 3D shape data to a sonic wavetable, proposing an alternative definition of sound which is both strictly representational and artificial.
+A process of temporary translation from 3D shape data to a sonic wavetable, proposing an alternative definition of sound which is both strictly representational and artificial. Demonstration and process videos coming soon!
 
 Created for ITP 2022 Thesis.
 
