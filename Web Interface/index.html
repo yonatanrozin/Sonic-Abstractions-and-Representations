@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title>RC Scanner 6</title>
+
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="3D.js"></script>
+    <script src="script.js"></script>
+    <script src="rays.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body style="background-color: grey">
+    
+    <a-scene id="scene" style="background-color: black" vr-mode-ui="enabled: false" embedded>
+        <a-entity id="camera" camera="active: true" look-controls wasd-controls position="0 1.8 4" ></a-entity>
+        <a-entity id="scannedobject" geometry="primitive: tetrahedron" material="side: double; wireframe: false" position="0 0 0" rotation="0 0 0" class="scanned"></a-entity>
+        <!-- <a-entity id="gltfmodel" class="scanned" gltf-model="https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Duck/glTF/Duck.gltf"></a-entity> -->
+        <a-entity id="graph3D" position="0 3 0"></a-entity>
+        <a-entity id="rayspinner" rayscanner></a-entity>
+    </a-scene>
+    <br><br>
+
+    <div class="column">
+        <label for="rayCountSlider">Scan resolution: </label>
+        <input 
+            id = "rayCountSlider" type="range" min="2" max="50" 
+            oninput="updateSetting('rayCount', this.value); document.getElementById('rayCountSliderValue').innerHTML = this.value;">
+        <span id="rayCountSliderValue"></span>
+        <br><br>
+        <button id="beginScanButton" onclick="rayscanner.beginScan()">SCAN</button><br>
+        <button id="socketconnectbutton" onclick="socketConnect()">Connect to WebSocket</button>
+    </div>
+
+    
+    <div id="scanlist" class="column">
+        Scans:<br>
+        <!-- Scans go here -->
+    </div>
+    <div id="2DTools" class="column">
+        <!-- p5 canvas gets appended here -->
+
+    </div><br>
+
+</body>

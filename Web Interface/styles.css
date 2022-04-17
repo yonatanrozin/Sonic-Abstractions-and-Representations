@@ -1,0 +1,10 @@
+a-scene {
+  height: 450px;
+  width: 900px;
+}
+
+.column {
+  position: relative;
+  float: left;
+  width: 25%;
+}
