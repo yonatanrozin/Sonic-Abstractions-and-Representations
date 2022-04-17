@@ -12,7 +12,7 @@ Created for ITP 2022 Thesis.
   
 ## Software
 - Browser interface 
- - [THREE.js](https://threejs.org/) and [A-frame](https://aframe.io/) virtual 3D environment
- - [P5.js](https://p5js.org/) 2D canvas
+  - [THREE.js](https://threejs.org/) and [A-frame](https://aframe.io/) virtual 3D environment
+  - [P5.js](https://p5js.org/) 2D canvas
 - [Max/MSP](https://cycling74.com/products/max) synthesizer patch
- - WebSocket Node.js for Max script 
+  - WebSocket Node.js for Max script 
