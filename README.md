@@ -1,7 +1,7 @@
-# Sonic-Abstractions-and-Representations [in progress]
+# Sonic-Abstractions-and-Representations
 A process of temporary translation from 3D shape data to a sonic wavetable, proposing an alternative definition of sound which is both strictly representational and artificial. Demonstration and process videos coming soon!
 
-Created for ITP 2022 Thesis.
+Created for ITP 2022 Thesis. A video of the final thesis presentation can be found [here](https://vimeo.com/715864777).
 
 ## Introduction
   The “sound” of an object has traditionally been defined by the wave that results from a vibration through its physical body. When defined in this way, however, sound is not intrinsic to the object in question; it’s affected by a multitude of additional external parameters, most significantly those concerning the cause of the vibration. Of the infinite sounds a drum can produce, when struck with various objects at various points and velocities, none can be considered intrinsic to the drum itself. _Sonic Abstractions and Representations_ seeks to establish an alternative definition of sound which, though not produced by the object naturally, is a product solely of its own physical features. This is accomplished through a process which translates 3D points along the object’s surface to samples in an audible wavetable. The process considers only shape as a parameter; other features such as texture, color, weight and density are not considered.
@@ -18,3 +18,7 @@ Created for ITP 2022 Thesis.
   - [P5.js](https://p5js.org/) 2D canvas
 - [Max/MSP](https://cycling74.com/products/max) synthesizer patch
   - WebSocket Node.js for Max script 
+
+## Special Thanks
+- To my thesis advisor [Sharon Lee De La Cruz](https://www.sharonleedelacruz.com/) for her endless inspiration and guidance!
+- To [Luisa Pereira](https://www.luisapereira.net/), [Luke DuBois](https://www.lukedubois.com/) and [Billy Bennett](https://billybennett.tv/) for fueling and guiding my interest in synthesized sounds!
